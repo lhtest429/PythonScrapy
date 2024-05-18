@@ -1,0 +1,1121 @@
+2024-03-01 14:55:27.824 | INFO     | uvicorn.server:serve:77 - Started server process [36656]
+2024-03-01 14:55:27.824 | INFO     | uvicorn.lifespan.on:startup:46 - Waiting for application startup.
+2024-03-01 14:55:27.824 | INFO     | uvicorn.lifespan.on:startup:60 - Application startup complete.
+2024-03-01 14:55:27.826 | INFO     | uvicorn.server:_log_started_message:219 - Uvicorn running on http://0.0.0.0:8010 (Press CTRL+C to quit)
+2024-03-01 14:55:47.532 | INFO     | uvicorn.server:shutdown:265 - Shutting down
+2024-03-01 14:55:47.642 | INFO     | uvicorn.lifespan.on:shutdown:65 - Waiting for application shutdown.
+2024-03-01 14:55:47.643 | INFO     | uvicorn.lifespan.on:shutdown:76 - Application shutdown complete.
+2024-03-01 14:55:47.645 | INFO     | uvicorn.server:serve:87 - Finished server process [36656]
+2024-03-01 14:55:51.583 | INFO     | uvicorn.server:serve:77 - Started server process [41360]
+2024-03-01 14:55:51.584 | INFO     | uvicorn.lifespan.on:startup:46 - Waiting for application startup.
+2024-03-01 14:55:51.584 | INFO     | uvicorn.lifespan.on:startup:60 - Application startup complete.
+2024-03-01 14:55:51.585 | INFO     | uvicorn.server:_log_started_message:219 - Uvicorn running on http://127.0.0.1:8010 (Press CTRL+C to quit)
+2024-03-01 14:56:02.253 | INFO     | uvicorn.protocols.websockets.websockets_impl:asgi_send:287 - ('127.0.0.1', 49863) - "WebSocket /ws/user1" [accepted]
+2024-03-01 14:56:02.254 | INFO     | websockets.legacy.server:handshake:642 - connection open
+2024-03-01 14:56:04.294 | INFO     | websockets.legacy.server:handler:264 - connection closed
+2024-03-01 14:56:04.358 | INFO     | uvicorn.protocols.websockets.websockets_impl:asgi_send:287 - ('127.0.0.1', 49869) - "WebSocket /ws/user1" [accepted]
+2024-03-01 14:56:04.358 | INFO     | websockets.legacy.server:handshake:642 - connection open
+2024-03-01 14:56:04.886 | INFO     | websockets.legacy.server:handler:264 - connection closed
+2024-03-01 14:56:04.961 | INFO     | uvicorn.protocols.websockets.websockets_impl:asgi_send:287 - ('127.0.0.1', 49872) - "WebSocket /ws/user1" [accepted]
+2024-03-01 14:56:04.961 | INFO     | websockets.legacy.server:handshake:642 - connection open
+2024-03-01 14:56:05.028 | INFO     | websockets.legacy.server:handler:264 - connection closed
+2024-03-01 14:56:05.086 | INFO     | uvicorn.protocols.websockets.websockets_impl:asgi_send:287 - ('127.0.0.1', 49874) - "WebSocket /ws/user1" [accepted]
+2024-03-01 14:56:05.087 | INFO     | websockets.legacy.server:handshake:642 - connection open
+2024-03-01 14:56:05.178 | INFO     | websockets.legacy.server:handler:264 - connection closed
+2024-03-01 14:56:05.236 | INFO     | uvicorn.protocols.websockets.websockets_impl:asgi_send:287 - ('127.0.0.1', 49876) - "WebSocket /ws/user1" [accepted]
+2024-03-01 14:56:05.237 | INFO     | websockets.legacy.server:handshake:642 - connection open
+2024-03-01 14:57:08.795 | INFO     | uvicorn.server:shutdown:265 - Shutting down
+2024-03-01 14:57:08.796 | INFO     | websockets.legacy.server:handler:264 - connection closed
+2024-03-01 14:57:08.904 | INFO     | uvicorn.lifespan.on:shutdown:65 - Waiting for application shutdown.
+2024-03-01 14:57:08.904 | INFO     | uvicorn.lifespan.on:shutdown:76 - Application shutdown complete.
+2024-03-01 14:57:08.905 | INFO     | uvicorn.server:serve:87 - Finished server process [41360]
+2024-03-01 14:57:09.801 | INFO     | uvicorn.server:serve:77 - Started server process [9636]
+2024-03-01 14:57:09.801 | INFO     | uvicorn.lifespan.on:startup:46 - Waiting for application startup.
+2024-03-01 14:57:09.801 | INFO     | uvicorn.lifespan.on:startup:60 - Application startup complete.
+2024-03-01 14:57:09.802 | INFO     | uvicorn.server:_log_started_message:219 - Uvicorn running on http://127.0.0.1:8010 (Press CTRL+C to quit)
+2024-03-01 14:57:14.574 | INFO     | uvicorn.protocols.websockets.websockets_impl:asgi_send:287 - ('127.0.0.1', 49926) - "WebSocket /ws/user1" [accepted]
+2024-03-01 14:57:14.576 | INFO     | websockets.legacy.server:handshake:642 - connection open
+2024-03-01 14:57:14.576 | ERROR    | uvicorn.protocols.websockets.websockets_impl:run_asgi:262 - Exception in ASGI application
+
+Traceback (most recent call last):
+
+  File "D:\MyWork\MyCode\PythonProject\xhs-fastapi\backend\websocket_test.py", line 107, in <module>
+    server.run()
+    │      └ <function Server.run at 0x0000022CB7F44670>
+    └ <uvicorn.server.Server object at 0x0000022CB7D72710>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\uvicorn\server.py", line 62, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           │       │   │    │             └ None
+           │       │   │    └ <function Server.serve at 0x0000022CB7F44700>
+           │       │   └ <uvicorn.server.Server object at 0x0000022CB7D72710>
+           │       └ <function run at 0x0000022CB6414E50>
+           └ <module 'asyncio' from 'D:\\Study\\Anaconda3\\envs\\xhsScrapy\\lib\\asyncio\\__init__.py'>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+           │    │                  └ <coroutine object Server.serve at 0x0000022CB7F74190>
+           │    └ <function BaseEventLoop.run_until_complete at 0x0000022CB6416830>
+           └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\asyncio\base_events.py", line 636, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x0000022CB64167A0>
+    └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\asyncio\base_events.py", line 603, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x0000022CB6418310>
+    └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\asyncio\base_events.py", line 1909, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x0000022CB63A3760>
+    └ <Handle Task.task_wakeup(<Future finished result=True>)>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle Task.task_wakeup(<Future finished result=True>)>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle Task.task_wakeup(<Future finished result=True>)>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle Task.task_wakeup(<Future finished result=True>)>
+
+> File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\uvicorn\protocols\websockets\websockets_impl.py", line 255, in run_asgi
+    result = await self.app(self.scope, self.asgi_receive, self.asgi_send)
+                   │    │   │    │      │    │             │    └ <function WebSocketProtocol.asgi_send at 0x0000022CB804F9A0>
+                   │    │   │    │      │    │             └ <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0000022CB805F3D0>
+                   │    │   │    │      │    └ <function WebSocketProtocol.asgi_receive at 0x0000022CB804FA30>
+                   │    │   │    │      └ <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0000022CB805F3D0>
+                   │    │   │    └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+                   │    │   └ <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0000022CB805F3D0>
+                   │    └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x0000022CB7FA3BE0>
+                   └ <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0000022CB805F3D0>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 84, in __call__
+    return await self.app(scope, receive, send)
+                 │    │   │      │        └ <bound method WebSocketProtocol.asgi_send of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0000...
+                 │    │   │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+                 │    │   └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+                 │    └ <fastapi.applications.FastAPI object at 0x0000022CB805C1F0>
+                 └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x0000022CB7FA3BE0>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+                           │      │        └ <bound method WebSocketProtocol.asgi_send of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0000...
+                           │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+                           └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\applications.py", line 123, in __call__
+    await self.middleware_stack(scope, receive, send)
+          │    │                │      │        └ <bound method WebSocketProtocol.asgi_send of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0000...
+          │    │                │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+          │    │                └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+          │    └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x0000022CB805D120>
+          └ <fastapi.applications.FastAPI object at 0x0000022CB805C1F0>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\middleware\errors.py", line 151, in __call__
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <bound method WebSocketProtocol.asgi_send of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0000...
+          │    │   │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+          │    │   └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+          │    └ <starlette.middleware.cors.CORSMiddleware object at 0x0000022CB805F910>
+          └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x0000022CB805D120>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\middleware\cors.py", line 75, in __call__
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <bound method WebSocketProtocol.asgi_send of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0000...
+          │    │   │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+          │    │   └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+          │    └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x0000022CB805F850>
+          └ <starlette.middleware.cors.CORSMiddleware object at 0x0000022CB805F910>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+          │                            │    │    │     │      │        └ <bound method WebSocketProtocol.asgi_send of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0000...
+          │                            │    │    │     │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+          │                            │    │    │     └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+          │                            │    │    └ <starlette.websockets.WebSocket object at 0x0000022CB805ECB0>
+          │                            │    └ <fastapi.routing.APIRouter object at 0x0000022CB805C340>
+          │                            └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x0000022CB805F850>
+          └ <function wrap_app_handling_exceptions at 0x0000022CB7BC31C0>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+          │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000022CB8055360>
+          │   │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+          │   └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+          └ <fastapi.routing.APIRouter object at 0x0000022CB805C340>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\routing.py", line 758, in __call__
+    await self.middleware_stack(scope, receive, send)
+          │    │                │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000022CB8055360>
+          │    │                │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+          │    │                └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+          │    └ <bound method Router.app of <fastapi.routing.APIRouter object at 0x0000022CB805C340>>
+          └ <fastapi.routing.APIRouter object at 0x0000022CB805C340>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\routing.py", line 778, in app
+    await route.handle(scope, receive, send)
+          │     │      │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000022CB8055360>
+          │     │      │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+          │     │      └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+          │     └ <function WebSocketRoute.handle at 0x0000022CB7BF0550>
+          └ APIWebSocketRoute(path='/ws/{user}', name='websocket_endpoint')
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\routing.py", line 375, in handle
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000022CB8055360>
+          │    │   │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+          │    │   └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+          │    └ <function websocket_session.<locals>.app at 0x0000022CB8055480>
+          └ APIWebSocketRoute(path='/ws/{user}', name='websocket_endpoint')
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\routing.py", line 98, in app
+    await wrap_app_handling_exceptions(app, session)(scope, receive, send)
+          │                            │    │        │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000022CB8055360>
+          │                            │    │        │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+          │                            │    │        └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+          │                            │    └ <starlette.websockets.WebSocket object at 0x0000022CB805EA10>
+          │                            └ <function websocket_session.<locals>.app.<locals>.app at 0x0000022CB8055120>
+          └ <function wrap_app_handling_exceptions at 0x0000022CB7BC31C0>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+          │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000022CB8055240>
+          │   │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+          │   └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+          └ <function websocket_session.<locals>.app.<locals>.app at 0x0000022CB8055120>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\routing.py", line 96, in app
+    await func(session)
+          │    └ <starlette.websockets.WebSocket object at 0x0000022CB805EA10>
+          └ <function get_websocket_app.<locals>.app at 0x0000022CB80553F0>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\fastapi\routing.py", line 348, in app
+    await dependant.call(**values)
+          │         │      └ {'user': 'user1', 'ws': <starlette.websockets.WebSocket object at 0x0000022CB805EA10>}
+          │         └ <function websocket_endpoint at 0x0000022CB8054DC0>
+          └ <fastapi.dependencies.models.Dependant object at 0x0000022CB805C820>
+
+  File "D:\MyWork\MyCode\PythonProject\xhs-fastapi\backend\websocket_test.py", line 82, in websocket_endpoint
+    await manager.send_periodic_message()
+          │       └ <function ConnectionManager.send_periodic_message at 0x0000022CB8054D30>
+          └ <websocket_test.ConnectionManager object at 0x0000022CB805C6A0>
+
+TypeError: ConnectionManager.send_periodic_message() missing 1 required positional argument: 'ws'
+2024-03-01 14:57:14.615 | INFO     | websockets.legacy.server:handler:264 - connection closed
+2024-03-01 14:57:49.419 | INFO     | uvicorn.server:shutdown:265 - Shutting down
+2024-03-01 14:57:49.528 | INFO     | uvicorn.lifespan.on:shutdown:65 - Waiting for application shutdown.
+2024-03-01 14:57:49.528 | INFO     | uvicorn.lifespan.on:shutdown:76 - Application shutdown complete.
+2024-03-01 14:57:49.528 | INFO     | uvicorn.server:serve:87 - Finished server process [9636]
+2024-03-01 14:57:50.251 | INFO     | uvicorn.server:serve:77 - Started server process [16744]
+2024-03-01 14:57:50.251 | INFO     | uvicorn.lifespan.on:startup:46 - Waiting for application startup.
+2024-03-01 14:57:50.252 | INFO     | uvicorn.lifespan.on:startup:60 - Application startup complete.
+2024-03-01 14:57:50.253 | INFO     | uvicorn.server:_log_started_message:219 - Uvicorn running on http://127.0.0.1:8010 (Press CTRL+C to quit)
+2024-03-01 14:57:56.048 | INFO     | uvicorn.protocols.websockets.websockets_impl:asgi_send:287 - ('127.0.0.1', 49958) - "WebSocket /ws/user1" [accepted]
+2024-03-01 14:57:56.049 | INFO     | websockets.legacy.server:handshake:642 - connection open
+2024-03-01 14:58:57.160 | INFO     | uvicorn.server:shutdown:265 - Shutting down
+2024-03-01 14:58:57.161 | INFO     | websockets.legacy.server:handler:264 - connection closed
+2024-03-01 14:58:57.269 | INFO     | uvicorn.server:_wait_tasks_to_complete:310 - Waiting for background tasks to complete. (CTRL+C to force quit)
+2024-03-01 14:58:59.240 | INFO     | uvicorn.lifespan.on:shutdown:65 - Waiting for application shutdown.
+2024-03-01 14:58:59.240 | INFO     | uvicorn.lifespan.on:shutdown:76 - Application shutdown complete.
+2024-03-01 14:58:59.240 | INFO     | uvicorn.server:serve:87 - Finished server process [16744]
+2024-03-01 14:58:59.995 | INFO     | uvicorn.server:serve:77 - Started server process [41132]
+2024-03-01 14:58:59.996 | INFO     | uvicorn.lifespan.on:startup:46 - Waiting for application startup.
+2024-03-01 14:58:59.996 | INFO     | uvicorn.lifespan.on:startup:60 - Application startup complete.
+2024-03-01 14:58:59.996 | INFO     | uvicorn.server:_log_started_message:219 - Uvicorn running on http://127.0.0.1:8010 (Press CTRL+C to quit)
+2024-03-01 14:59:03.557 | INFO     | uvicorn.protocols.websockets.websockets_impl:asgi_send:287 - ('127.0.0.1', 50077) - "WebSocket /ws/user1" [accepted]
+2024-03-01 14:59:03.557 | INFO     | websockets.legacy.server:handshake:642 - connection open
+2024-03-01 14:59:25.584 | INFO     | uvicorn.server:shutdown:265 - Shutting down
+2024-03-01 14:59:25.585 | INFO     | websockets.legacy.server:handler:264 - connection closed
+2024-03-01 14:59:25.694 | INFO     | uvicorn.server:_wait_tasks_to_complete:310 - Waiting for background tasks to complete. (CTRL+C to force quit)
+2024-03-01 14:59:27.666 | INFO     | uvicorn.lifespan.on:shutdown:65 - Waiting for application shutdown.
+2024-03-01 14:59:27.666 | INFO     | uvicorn.lifespan.on:shutdown:76 - Application shutdown complete.
+2024-03-01 14:59:27.666 | INFO     | uvicorn.server:serve:87 - Finished server process [41132]
+2024-03-01 14:59:28.465 | INFO     | uvicorn.server:serve:77 - Started server process [29972]
+2024-03-01 14:59:28.465 | INFO     | uvicorn.lifespan.on:startup:46 - Waiting for application startup.
+2024-03-01 14:59:28.466 | INFO     | uvicorn.lifespan.on:startup:60 - Application startup complete.
+2024-03-01 14:59:28.466 | INFO     | uvicorn.server:_log_started_message:219 - Uvicorn running on http://127.0.0.1:8010 (Press CTRL+C to quit)
+2024-03-01 14:59:31.248 | INFO     | uvicorn.protocols.websockets.websockets_impl:asgi_send:287 - ('127.0.0.1', 50103) - "WebSocket /ws/user1" [accepted]
+2024-03-01 14:59:31.249 | INFO     | websockets.legacy.server:handshake:642 - connection open
+2024-03-01 15:04:56.100 | INFO     | uvicorn.server:shutdown:265 - Shutting down
+2024-03-01 15:04:56.101 | INFO     | websockets.legacy.server:handler:264 - connection closed
+2024-03-01 15:04:56.207 | INFO     | uvicorn.server:_wait_tasks_to_complete:310 - Waiting for background tasks to complete. (CTRL+C to force quit)
+2024-03-01 15:04:58.945 | INFO     | uvicorn.lifespan.on:shutdown:65 - Waiting for application shutdown.
+2024-03-01 15:04:58.945 | INFO     | uvicorn.lifespan.on:shutdown:76 - Application shutdown complete.
+2024-03-01 15:04:58.945 | INFO     | uvicorn.server:serve:87 - Finished server process [29972]
+2024-03-01 15:05:00.929 | INFO     | uvicorn.server:serve:77 - Started server process [15512]
+2024-03-01 15:05:00.930 | INFO     | uvicorn.lifespan.on:startup:46 - Waiting for application startup.
+2024-03-01 15:05:00.930 | INFO     | uvicorn.lifespan.on:startup:60 - Application startup complete.
+2024-03-01 15:05:00.931 | INFO     | uvicorn.server:_log_started_message:219 - Uvicorn running on http://127.0.0.1:8010 (Press CTRL+C to quit)
+2024-03-01 15:07:08.032 | INFO     | uvicorn.protocols.websockets.websockets_impl:asgi_send:287 - ('127.0.0.1', 50399) - "WebSocket /ws/user1" [accepted]
+2024-03-01 15:07:08.032 | INFO     | websockets.legacy.server:handshake:642 - connection open
+2024-03-01 15:07:47.965 | INFO     | uvicorn.server:shutdown:265 - Shutting down
+2024-03-01 15:07:47.966 | INFO     | websockets.legacy.server:handler:264 - connection closed
+2024-03-01 15:07:48.076 | INFO     | uvicorn.server:_wait_tasks_to_complete:310 - Waiting for background tasks to complete. (CTRL+C to force quit)
+2024-03-01 15:07:50.152 | INFO     | uvicorn.lifespan.on:shutdown:65 - Waiting for application shutdown.
+2024-03-01 15:07:50.152 | INFO     | uvicorn.lifespan.on:shutdown:76 - Application shutdown complete.
+2024-03-01 15:07:50.153 | INFO     | uvicorn.server:serve:87 - Finished server process [15512]
+2024-03-01 15:07:50.896 | INFO     | uvicorn.server:serve:77 - Started server process [25276]
+2024-03-01 15:07:50.896 | INFO     | uvicorn.lifespan.on:startup:46 - Waiting for application startup.
+2024-03-01 15:07:50.897 | INFO     | uvicorn.lifespan.on:startup:60 - Application startup complete.
+2024-03-01 15:07:50.898 | INFO     | uvicorn.server:_log_started_message:219 - Uvicorn running on http://127.0.0.1:8010 (Press CTRL+C to quit)
+2024-03-01 15:07:54.458 | INFO     | uvicorn.protocols.websockets.websockets_impl:asgi_send:287 - ('127.0.0.1', 50412) - "WebSocket /ws/user1" [accepted]
+2024-03-01 15:07:54.459 | INFO     | websockets.legacy.server:handshake:642 - connection open
+2024-03-01 15:07:55.367 | INFO     | websockets.legacy.server:handler:264 - connection closed
+2024-03-01 15:07:55.424 | INFO     | uvicorn.protocols.websockets.websockets_impl:asgi_send:287 - ('127.0.0.1', 50421) - "WebSocket /ws/user1" [accepted]
+2024-03-01 15:07:55.426 | ERROR    | uvicorn.protocols.websockets.websockets_impl:run_asgi:262 - Exception in ASGI application
+
+Traceback (most recent call last):
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\uvicorn\protocols\websockets\websockets_impl.py", line 349, in asgi_send
+    await self.send(data)  # type: ignore[arg-type]
+          │    │    └ '{"user":"user1","message":"进入聊天"," ":"2024-03-01 15:07:55"}'
+          │    └ <function WebSocketCommonProtocol.send at 0x0000018F4E6C0A60>
+          └ <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0000018F4E6D34F0>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\websockets\legacy\protocol.py", line 635, in send
+    await self.ensure_open()
+          │    └ <function WebSocketCommonProtocol.ensure_open at 0x0000018F4E6C0DC0>
+          └ <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0000018F4E6D34F0>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\websockets\legacy\protocol.py", line 939, in ensure_open
+    raise self.connection_closed_exc()
+          │    └ <function WebSocketCommonProtocol.connection_closed_exc at 0x0000018F4E6C0D30>
+          └ <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0000018F4E6D34F0>
+
+websockets.exceptions.ConnectionClosedOK: received 1001 (going away); then sent 1001 (going away)
+
+
+The above exception was the direct cause of the following exception:
+
+
+Traceback (most recent call last):
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\websockets.py", line 88, in send
+    await self._send(message)
+          │    │     └ {'type': 'websocket.send', 'text': '{"user":"user1","message":"进入聊天"," ":"2024-03-01 15:07:55"}'}
+          │    └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000018F4E6C93F0>
+          └ <starlette.websockets.WebSocket object at 0x0000018F4E6D2B30>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\_exception_handler.py", line 50, in sender
+    await send(message)
+          │    └ {'type': 'websocket.send', 'text': '{"user":"user1","message":"进入聊天"," ":"2024-03-01 15:07:55"}'}
+          └ <bound method WebSocketProtocol.asgi_send of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0000...
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\uvicorn\protocols\websockets\websockets_impl.py", line 365, in asgi_send
+    raise ClientDisconnected from exc
+          └ <class 'uvicorn.protocols.utils.ClientDisconnected'>
+
+uvicorn.protocols.utils.ClientDisconnected
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "D:\MyWork\MyCode\PythonProject\xhs-fastapi\backend\websocket_test.py", line 127, in <module>
+    server.run()
+    │      └ <function Server.run at 0x0000018F4E5B4700>
+    └ <uvicorn.server.Server object at 0x0000018F4E41B4F0>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\uvicorn\server.py", line 62, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           │       │   │    │             └ None
+           │       │   │    └ <function Server.serve at 0x0000018F4E5B4790>
+           │       │   └ <uvicorn.server.Server object at 0x0000018F4E41B4F0>
+           │       └ <function run at 0x0000018F4CA84DC0>
+           └ <module 'asyncio' from 'D:\\Study\\Anaconda3\\envs\\xhsScrapy\\lib\\asyncio\\__init__.py'>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+           │    │                  └ <coroutine object Server.serve at 0x0000018F4E5E4190>
+           │    └ <function BaseEventLoop.run_until_complete at 0x0000018F4CA867A0>
+           └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\asyncio\base_events.py", line 636, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x0000018F4CA86710>
+    └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\asyncio\base_events.py", line 603, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x0000018F4CA88280>
+    └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\asyncio\base_events.py", line 1909, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x0000018F4CA1F6D0>
+    └ <Handle <TaskStepMethWrapper object at 0x0000018F4E6D0BE0>()>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <TaskStepMethWrapper object at 0x0000018F4E6D0BE0>()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <TaskStepMethWrapper object at 0x0000018F4E6D0BE0>()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <TaskStepMethWrapper object at 0x0000018F4E6D0BE0>()>
+
+> File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\uvicorn\protocols\websockets\websockets_impl.py", line 255, in run_asgi
+    result = await self.app(self.scope, self.asgi_receive, self.asgi_send)
+                   │    │   │    │      │    │             │    └ <function WebSocketProtocol.asgi_send at 0x0000018F4E6C3A30>
+                   │    │   │    │      │    │             └ <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0000018F4E6D24D0>
+                   │    │   │    │      │    └ <function WebSocketProtocol.asgi_receive at 0x0000018F4E6C3AC0>
+                   │    │   │    │      └ <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0000018F4E6D24D0>
+                   │    │   │    └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+                   │    │   └ <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0000018F4E6D24D0>
+                   │    └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x0000018F4E614A60>
+                   └ <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0000018F4E6D24D0>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 84, in __call__
+    return await self.app(scope, receive, send)
+                 │    │   │      │        └ <bound method WebSocketProtocol.asgi_send of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0000...
+                 │    │   │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+                 │    │   └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+                 │    └ <fastapi.applications.FastAPI object at 0x0000018F4E6D0EE0>
+                 └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x0000018F4E614A60>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+                           │      │        └ <bound method WebSocketProtocol.asgi_send of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0000...
+                           │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+                           └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\applications.py", line 123, in __call__
+    await self.middleware_stack(scope, receive, send)
+          │    │                │      │        └ <bound method WebSocketProtocol.asgi_send of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0000...
+          │    │                │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+          │    │                └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+          │    └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x0000018F4E6D1CF0>
+          └ <fastapi.applications.FastAPI object at 0x0000018F4E6D0EE0>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\middleware\errors.py", line 151, in __call__
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <bound method WebSocketProtocol.asgi_send of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0000...
+          │    │   │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+          │    │   └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+          │    └ <starlette.middleware.cors.CORSMiddleware object at 0x0000018F4E6D1E70>
+          └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x0000018F4E6D1CF0>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\middleware\cors.py", line 75, in __call__
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <bound method WebSocketProtocol.asgi_send of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0000...
+          │    │   │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+          │    │   └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+          │    └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x0000018F4E6D1E40>
+          └ <starlette.middleware.cors.CORSMiddleware object at 0x0000018F4E6D1E70>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+          │                            │    │    │     │      │        └ <bound method WebSocketProtocol.asgi_send of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0000...
+          │                            │    │    │     │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+          │                            │    │    │     └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+          │                            │    │    └ <starlette.websockets.WebSocket object at 0x0000018F4E6D0B80>
+          │                            │    └ <fastapi.routing.APIRouter object at 0x0000018F4E6D1030>
+          │                            └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x0000018F4E6D1E40>
+          └ <function wrap_app_handling_exceptions at 0x0000018F4E22F130>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+          │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000018F4E6C8F70>
+          │   │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+          │   └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+          └ <fastapi.routing.APIRouter object at 0x0000018F4E6D1030>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\routing.py", line 758, in __call__
+    await self.middleware_stack(scope, receive, send)
+          │    │                │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000018F4E6C8F70>
+          │    │                │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+          │    │                └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+          │    └ <bound method Router.app of <fastapi.routing.APIRouter object at 0x0000018F4E6D1030>>
+          └ <fastapi.routing.APIRouter object at 0x0000018F4E6D1030>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\routing.py", line 778, in app
+    await route.handle(scope, receive, send)
+          │     │      │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000018F4E6C8F70>
+          │     │      │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+          │     │      └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+          │     └ <function WebSocketRoute.handle at 0x0000018F4E2644C0>
+          └ APIWebSocketRoute(path='/ws/{user}', name='websocket_endpoint')
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\routing.py", line 375, in handle
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000018F4E6C8F70>
+          │    │   │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+          │    │   └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+          │    └ <function websocket_session.<locals>.app at 0x0000018F4E6C9510>
+          └ APIWebSocketRoute(path='/ws/{user}', name='websocket_endpoint')
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\routing.py", line 98, in app
+    await wrap_app_handling_exceptions(app, session)(scope, receive, send)
+          │                            │    │        │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000018F4E6C8F70>
+          │                            │    │        │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+          │                            │    │        └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+          │                            │    └ <starlette.websockets.WebSocket object at 0x0000018F4E6D09D0>
+          │                            └ <function websocket_session.<locals>.app.<locals>.app at 0x0000018F4E6C8700>
+          └ <function wrap_app_handling_exceptions at 0x0000018F4E22F130>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+          │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000018F4E6C9120>
+          │   │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+          │   └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+          └ <function websocket_session.<locals>.app.<locals>.app at 0x0000018F4E6C8700>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\routing.py", line 96, in app
+    await func(session)
+          │    └ <starlette.websockets.WebSocket object at 0x0000018F4E6D09D0>
+          └ <function get_websocket_app.<locals>.app at 0x0000018F4E6C9480>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\fastapi\routing.py", line 348, in app
+    await dependant.call(**values)
+          │         │      └ {'user': 'user1', 'ws': <starlette.websockets.WebSocket object at 0x0000018F4E6D09D0>}
+          │         └ <function websocket_endpoint at 0x0000018F4E6C8E50>
+          └ <fastapi.dependencies.models.Dependant object at 0x0000018F4E6D1540>
+
+  File "D:\MyWork\MyCode\PythonProject\xhs-fastapi\backend\websocket_test.py", line 99, in websocket_endpoint
+    await manager.broadcast({"user": user, "message": "进入聊天", " ": current_time})
+          │       │                  │                             └ '2024-03-01 15:07:55'
+          │       │                  └ 'user1'
+          │       └ <function ConnectionManager.broadcast at 0x0000018F4E6C8CA0>
+          └ <websocket_test.ConnectionManager object at 0x0000018F4E6D1360>
+
+  File "D:\MyWork\MyCode\PythonProject\xhs-fastapi\backend\websocket_test.py", line 75, in broadcast
+    await connection['ws'].send_json(data)
+          │                          └ {'user': 'user1', 'message': '进入聊天', ' ': '2024-03-01 15:07:55'}
+          └ {'user': 'user1', 'ws': <starlette.websockets.WebSocket object at 0x0000018F4E6D2B30>}
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\websockets.py", line 179, in send_json
+    await self.send({"type": "websocket.send", "text": text})
+          │    │                                       └ '{"user":"user1","message":"进入聊天"," ":"2024-03-01 15:07:55"}'
+          │    └ <function WebSocket.send at 0x0000018F4E1836D0>
+          └ <starlette.websockets.WebSocket object at 0x0000018F4E6D2B30>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\websockets.py", line 91, in send
+    raise WebSocketDisconnect(code=1006)
+          └ <class 'starlette.websockets.WebSocketDisconnect'>
+
+starlette.websockets.WebSocketDisconnect
+2024-03-01 15:07:55.449 | INFO     | websockets.legacy.server:handshake:642 - connection open
+2024-03-01 15:07:55.451 | INFO     | websockets.legacy.server:handler:264 - connection closed
+2024-03-01 15:07:55.801 | INFO     | uvicorn.protocols.websockets.websockets_impl:asgi_send:287 - ('127.0.0.1', 50424) - "WebSocket /ws/user1" [accepted]
+2024-03-01 15:07:55.801 | ERROR    | uvicorn.protocols.websockets.websockets_impl:run_asgi:262 - Exception in ASGI application
+
+Traceback (most recent call last):
+
+  File "D:\MyWork\MyCode\PythonProject\xhs-fastapi\backend\websocket_test.py", line 127, in <module>
+    server.run()
+    │      └ <function Server.run at 0x0000018F4E5B4700>
+    └ <uvicorn.server.Server object at 0x0000018F4E41B4F0>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\uvicorn\server.py", line 62, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           │       │   │    │             └ None
+           │       │   │    └ <function Server.serve at 0x0000018F4E5B4790>
+           │       │   └ <uvicorn.server.Server object at 0x0000018F4E41B4F0>
+           │       └ <function run at 0x0000018F4CA84DC0>
+           └ <module 'asyncio' from 'D:\\Study\\Anaconda3\\envs\\xhsScrapy\\lib\\asyncio\\__init__.py'>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+           │    │                  └ <coroutine object Server.serve at 0x0000018F4E5E4190>
+           │    └ <function BaseEventLoop.run_until_complete at 0x0000018F4CA867A0>
+           └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\asyncio\base_events.py", line 636, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x0000018F4CA86710>
+    └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\asyncio\base_events.py", line 603, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x0000018F4CA88280>
+    └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\asyncio\base_events.py", line 1909, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x0000018F4CA1F6D0>
+    └ <Handle <TaskStepMethWrapper object at 0x0000018F4E6AB9A0>()>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <TaskStepMethWrapper object at 0x0000018F4E6AB9A0>()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <TaskStepMethWrapper object at 0x0000018F4E6AB9A0>()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <TaskStepMethWrapper object at 0x0000018F4E6AB9A0>()>
+
+> File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\uvicorn\protocols\websockets\websockets_impl.py", line 255, in run_asgi
+    result = await self.app(self.scope, self.asgi_receive, self.asgi_send)
+                   │    │   │    │      │    │             │    └ <function WebSocketProtocol.asgi_send at 0x0000018F4E6C3A30>
+                   │    │   │    │      │    │             └ <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0000018F4E6AAE60>
+                   │    │   │    │      │    └ <function WebSocketProtocol.asgi_receive at 0x0000018F4E6C3AC0>
+                   │    │   │    │      └ <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0000018F4E6AAE60>
+                   │    │   │    └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+                   │    │   └ <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0000018F4E6AAE60>
+                   │    └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x0000018F4E614A60>
+                   └ <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0000018F4E6AAE60>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 84, in __call__
+    return await self.app(scope, receive, send)
+                 │    │   │      │        └ <bound method WebSocketProtocol.asgi_send of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0000...
+                 │    │   │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+                 │    │   └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+                 │    └ <fastapi.applications.FastAPI object at 0x0000018F4E6D0EE0>
+                 └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x0000018F4E614A60>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+                           │      │        └ <bound method WebSocketProtocol.asgi_send of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0000...
+                           │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+                           └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\applications.py", line 123, in __call__
+    await self.middleware_stack(scope, receive, send)
+          │    │                │      │        └ <bound method WebSocketProtocol.asgi_send of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0000...
+          │    │                │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+          │    │                └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+          │    └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x0000018F4E6D1CF0>
+          └ <fastapi.applications.FastAPI object at 0x0000018F4E6D0EE0>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\middleware\errors.py", line 151, in __call__
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <bound method WebSocketProtocol.asgi_send of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0000...
+          │    │   │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+          │    │   └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+          │    └ <starlette.middleware.cors.CORSMiddleware object at 0x0000018F4E6D1E70>
+          └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x0000018F4E6D1CF0>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\middleware\cors.py", line 75, in __call__
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <bound method WebSocketProtocol.asgi_send of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0000...
+          │    │   │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+          │    │   └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+          │    └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x0000018F4E6D1E40>
+          └ <starlette.middleware.cors.CORSMiddleware object at 0x0000018F4E6D1E70>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+          │                            │    │    │     │      │        └ <bound method WebSocketProtocol.asgi_send of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0000...
+          │                            │    │    │     │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+          │                            │    │    │     └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+          │                            │    │    └ <starlette.websockets.WebSocket object at 0x0000018F4E6A9570>
+          │                            │    └ <fastapi.routing.APIRouter object at 0x0000018F4E6D1030>
+          │                            └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x0000018F4E6D1E40>
+          └ <function wrap_app_handling_exceptions at 0x0000018F4E22F130>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+          │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000018F4E6C96C0>
+          │   │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+          │   └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+          └ <fastapi.routing.APIRouter object at 0x0000018F4E6D1030>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\routing.py", line 758, in __call__
+    await self.middleware_stack(scope, receive, send)
+          │    │                │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000018F4E6C96C0>
+          │    │                │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+          │    │                └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+          │    └ <bound method Router.app of <fastapi.routing.APIRouter object at 0x0000018F4E6D1030>>
+          └ <fastapi.routing.APIRouter object at 0x0000018F4E6D1030>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\routing.py", line 778, in app
+    await route.handle(scope, receive, send)
+          │     │      │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000018F4E6C96C0>
+          │     │      │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+          │     │      └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+          │     └ <function WebSocketRoute.handle at 0x0000018F4E2644C0>
+          └ APIWebSocketRoute(path='/ws/{user}', name='websocket_endpoint')
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\routing.py", line 375, in handle
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000018F4E6C96C0>
+          │    │   │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+          │    │   └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+          │    └ <function websocket_session.<locals>.app at 0x0000018F4E6C9510>
+          └ APIWebSocketRoute(path='/ws/{user}', name='websocket_endpoint')
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\routing.py", line 98, in app
+    await wrap_app_handling_exceptions(app, session)(scope, receive, send)
+          │                            │    │        │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000018F4E6C96C0>
+          │                            │    │        │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+          │                            │    │        └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+          │                            │    └ <starlette.websockets.WebSocket object at 0x0000018F4E6A9F90>
+          │                            └ <function websocket_session.<locals>.app.<locals>.app at 0x0000018F4E6CB880>
+          └ <function wrap_app_handling_exceptions at 0x0000018F4E22F130>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+          │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000018F4F854550>
+          │   │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+          │   └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+          └ <function websocket_session.<locals>.app.<locals>.app at 0x0000018F4E6CB880>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\routing.py", line 96, in app
+    await func(session)
+          │    └ <starlette.websockets.WebSocket object at 0x0000018F4E6A9F90>
+          └ <function get_websocket_app.<locals>.app at 0x0000018F4E6C9480>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\fastapi\routing.py", line 348, in app
+    await dependant.call(**values)
+          │         │      └ {'user': 'user1', 'ws': <starlette.websockets.WebSocket object at 0x0000018F4E6A9F90>}
+          │         └ <function websocket_endpoint at 0x0000018F4E6C8E50>
+          └ <fastapi.dependencies.models.Dependant object at 0x0000018F4E6D1540>
+
+  File "D:\MyWork\MyCode\PythonProject\xhs-fastapi\backend\websocket_test.py", line 99, in websocket_endpoint
+    await manager.broadcast({"user": user, "message": "进入聊天", " ": current_time})
+          │       │                  │                             └ '2024-03-01 15:07:55'
+          │       │                  └ 'user1'
+          │       └ <function ConnectionManager.broadcast at 0x0000018F4E6C8CA0>
+          └ <websocket_test.ConnectionManager object at 0x0000018F4E6D1360>
+
+  File "D:\MyWork\MyCode\PythonProject\xhs-fastapi\backend\websocket_test.py", line 75, in broadcast
+    await connection['ws'].send_json(data)
+          │                          └ {'user': 'user1', 'message': '进入聊天', ' ': '2024-03-01 15:07:55'}
+          └ {'user': 'user1', 'ws': <starlette.websockets.WebSocket object at 0x0000018F4E6D2B30>}
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\websockets.py", line 179, in send_json
+    await self.send({"type": "websocket.send", "text": text})
+          │    │                                       └ '{"user":"user1","message":"进入聊天"," ":"2024-03-01 15:07:55"}'
+          │    └ <function WebSocket.send at 0x0000018F4E1836D0>
+          └ <starlette.websockets.WebSocket object at 0x0000018F4E6D2B30>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\websockets.py", line 93, in send
+    raise RuntimeError('Cannot call "send" once a close message has been sent.')
+
+RuntimeError: Cannot call "send" once a close message has been sent.
+2024-03-01 15:07:55.811 | INFO     | websockets.legacy.server:handshake:642 - connection open
+2024-03-01 15:07:55.811 | INFO     | websockets.legacy.server:handler:264 - connection closed
+2024-03-01 15:07:56.627 | INFO     | uvicorn.protocols.websockets.websockets_impl:asgi_send:287 - ('127.0.0.1', 50427) - "WebSocket /ws/user1" [accepted]
+2024-03-01 15:07:56.627 | ERROR    | uvicorn.protocols.websockets.websockets_impl:run_asgi:262 - Exception in ASGI application
+
+Traceback (most recent call last):
+
+  File "D:\MyWork\MyCode\PythonProject\xhs-fastapi\backend\websocket_test.py", line 127, in <module>
+    server.run()
+    │      └ <function Server.run at 0x0000018F4E5B4700>
+    └ <uvicorn.server.Server object at 0x0000018F4E41B4F0>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\uvicorn\server.py", line 62, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           │       │   │    │             └ None
+           │       │   │    └ <function Server.serve at 0x0000018F4E5B4790>
+           │       │   └ <uvicorn.server.Server object at 0x0000018F4E41B4F0>
+           │       └ <function run at 0x0000018F4CA84DC0>
+           └ <module 'asyncio' from 'D:\\Study\\Anaconda3\\envs\\xhsScrapy\\lib\\asyncio\\__init__.py'>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+           │    │                  └ <coroutine object Server.serve at 0x0000018F4E5E4190>
+           │    └ <function BaseEventLoop.run_until_complete at 0x0000018F4CA867A0>
+           └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\asyncio\base_events.py", line 636, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x0000018F4CA86710>
+    └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\asyncio\base_events.py", line 603, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x0000018F4CA88280>
+    └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\asyncio\base_events.py", line 1909, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x0000018F4CA1F6D0>
+    └ <Handle <TaskStepMethWrapper object at 0x0000018F4E6AB640>()>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <TaskStepMethWrapper object at 0x0000018F4E6AB640>()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <TaskStepMethWrapper object at 0x0000018F4E6AB640>()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <TaskStepMethWrapper object at 0x0000018F4E6AB640>()>
+
+> File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\uvicorn\protocols\websockets\websockets_impl.py", line 255, in run_asgi
+    result = await self.app(self.scope, self.asgi_receive, self.asgi_send)
+                   │    │   │    │      │    │             │    └ <function WebSocketProtocol.asgi_send at 0x0000018F4E6C3A30>
+                   │    │   │    │      │    │             └ <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0000018F4E6ABA60>
+                   │    │   │    │      │    └ <function WebSocketProtocol.asgi_receive at 0x0000018F4E6C3AC0>
+                   │    │   │    │      └ <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0000018F4E6ABA60>
+                   │    │   │    └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+                   │    │   └ <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0000018F4E6ABA60>
+                   │    └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x0000018F4E614A60>
+                   └ <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0000018F4E6ABA60>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 84, in __call__
+    return await self.app(scope, receive, send)
+                 │    │   │      │        └ <bound method WebSocketProtocol.asgi_send of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0000...
+                 │    │   │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+                 │    │   └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+                 │    └ <fastapi.applications.FastAPI object at 0x0000018F4E6D0EE0>
+                 └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x0000018F4E614A60>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+                           │      │        └ <bound method WebSocketProtocol.asgi_send of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0000...
+                           │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+                           └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\applications.py", line 123, in __call__
+    await self.middleware_stack(scope, receive, send)
+          │    │                │      │        └ <bound method WebSocketProtocol.asgi_send of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0000...
+          │    │                │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+          │    │                └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+          │    └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x0000018F4E6D1CF0>
+          └ <fastapi.applications.FastAPI object at 0x0000018F4E6D0EE0>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\middleware\errors.py", line 151, in __call__
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <bound method WebSocketProtocol.asgi_send of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0000...
+          │    │   │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+          │    │   └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+          │    └ <starlette.middleware.cors.CORSMiddleware object at 0x0000018F4E6D1E70>
+          └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x0000018F4E6D1CF0>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\middleware\cors.py", line 75, in __call__
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <bound method WebSocketProtocol.asgi_send of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0000...
+          │    │   │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+          │    │   └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+          │    └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x0000018F4E6D1E40>
+          └ <starlette.middleware.cors.CORSMiddleware object at 0x0000018F4E6D1E70>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+          │                            │    │    │     │      │        └ <bound method WebSocketProtocol.asgi_send of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0000...
+          │                            │    │    │     │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+          │                            │    │    │     └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+          │                            │    │    └ <starlette.websockets.WebSocket object at 0x0000018F4E6AB5E0>
+          │                            │    └ <fastapi.routing.APIRouter object at 0x0000018F4E6D1030>
+          │                            └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x0000018F4E6D1E40>
+          └ <function wrap_app_handling_exceptions at 0x0000018F4E22F130>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+          │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000018F4F854700>
+          │   │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+          │   └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+          └ <fastapi.routing.APIRouter object at 0x0000018F4E6D1030>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\routing.py", line 758, in __call__
+    await self.middleware_stack(scope, receive, send)
+          │    │                │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000018F4F854700>
+          │    │                │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+          │    │                └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+          │    └ <bound method Router.app of <fastapi.routing.APIRouter object at 0x0000018F4E6D1030>>
+          └ <fastapi.routing.APIRouter object at 0x0000018F4E6D1030>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\routing.py", line 778, in app
+    await route.handle(scope, receive, send)
+          │     │      │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000018F4F854700>
+          │     │      │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+          │     │      └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+          │     └ <function WebSocketRoute.handle at 0x0000018F4E2644C0>
+          └ APIWebSocketRoute(path='/ws/{user}', name='websocket_endpoint')
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\routing.py", line 375, in handle
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000018F4F854700>
+          │    │   │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+          │    │   └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+          │    └ <function websocket_session.<locals>.app at 0x0000018F4E6C9510>
+          └ APIWebSocketRoute(path='/ws/{user}', name='websocket_endpoint')
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\routing.py", line 98, in app
+    await wrap_app_handling_exceptions(app, session)(scope, receive, send)
+          │                            │    │        │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000018F4F854700>
+          │                            │    │        │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+          │                            │    │        └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+          │                            │    └ <starlette.websockets.WebSocket object at 0x0000018F4E6AB3D0>
+          │                            └ <function websocket_session.<locals>.app.<locals>.app at 0x0000018F4F854790>
+          └ <function wrap_app_handling_exceptions at 0x0000018F4E22F130>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+          │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000018F4F8548B0>
+          │   │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+          │   └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+          └ <function websocket_session.<locals>.app.<locals>.app at 0x0000018F4F854790>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\routing.py", line 96, in app
+    await func(session)
+          │    └ <starlette.websockets.WebSocket object at 0x0000018F4E6AB3D0>
+          └ <function get_websocket_app.<locals>.app at 0x0000018F4E6C9480>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\fastapi\routing.py", line 348, in app
+    await dependant.call(**values)
+          │         │      └ {'user': 'user1', 'ws': <starlette.websockets.WebSocket object at 0x0000018F4E6AB3D0>}
+          │         └ <function websocket_endpoint at 0x0000018F4E6C8E50>
+          └ <fastapi.dependencies.models.Dependant object at 0x0000018F4E6D1540>
+
+  File "D:\MyWork\MyCode\PythonProject\xhs-fastapi\backend\websocket_test.py", line 99, in websocket_endpoint
+    await manager.broadcast({"user": user, "message": "进入聊天", " ": current_time})
+          │       │                  │                             └ '2024-03-01 15:07:56'
+          │       │                  └ 'user1'
+          │       └ <function ConnectionManager.broadcast at 0x0000018F4E6C8CA0>
+          └ <websocket_test.ConnectionManager object at 0x0000018F4E6D1360>
+
+  File "D:\MyWork\MyCode\PythonProject\xhs-fastapi\backend\websocket_test.py", line 75, in broadcast
+    await connection['ws'].send_json(data)
+          │                          └ {'user': 'user1', 'message': '进入聊天', ' ': '2024-03-01 15:07:56'}
+          └ {'user': 'user1', 'ws': <starlette.websockets.WebSocket object at 0x0000018F4E6D2B30>}
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\websockets.py", line 179, in send_json
+    await self.send({"type": "websocket.send", "text": text})
+          │    │                                       └ '{"user":"user1","message":"进入聊天"," ":"2024-03-01 15:07:56"}'
+          │    └ <function WebSocket.send at 0x0000018F4E1836D0>
+          └ <starlette.websockets.WebSocket object at 0x0000018F4E6D2B30>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\websockets.py", line 93, in send
+    raise RuntimeError('Cannot call "send" once a close message has been sent.')
+
+RuntimeError: Cannot call "send" once a close message has been sent.
+2024-03-01 15:07:56.640 | INFO     | websockets.legacy.server:handshake:642 - connection open
+2024-03-01 15:07:56.641 | INFO     | websockets.legacy.server:handler:264 - connection closed
+2024-03-01 15:07:57.477 | ERROR    | uvicorn.protocols.websockets.websockets_impl:run_asgi:262 - Exception in ASGI application
+
+Traceback (most recent call last):
+
+  File "D:\MyWork\MyCode\PythonProject\xhs-fastapi\backend\websocket_test.py", line 127, in <module>
+    server.run()
+    │      └ <function Server.run at 0x0000018F4E5B4700>
+    └ <uvicorn.server.Server object at 0x0000018F4E41B4F0>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\uvicorn\server.py", line 62, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           │       │   │    │             └ None
+           │       │   │    └ <function Server.serve at 0x0000018F4E5B4790>
+           │       │   └ <uvicorn.server.Server object at 0x0000018F4E41B4F0>
+           │       └ <function run at 0x0000018F4CA84DC0>
+           └ <module 'asyncio' from 'D:\\Study\\Anaconda3\\envs\\xhsScrapy\\lib\\asyncio\\__init__.py'>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+           │    │                  └ <coroutine object Server.serve at 0x0000018F4E5E4190>
+           │    └ <function BaseEventLoop.run_until_complete at 0x0000018F4CA867A0>
+           └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\asyncio\base_events.py", line 636, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x0000018F4CA86710>
+    └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\asyncio\base_events.py", line 603, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x0000018F4CA88280>
+    └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\asyncio\base_events.py", line 1909, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x0000018F4CA1F6D0>
+    └ <Handle Task.task_wakeup(<Future finished result=None>)>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle Task.task_wakeup(<Future finished result=None>)>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle Task.task_wakeup(<Future finished result=None>)>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle Task.task_wakeup(<Future finished result=None>)>
+
+> File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\uvicorn\protocols\websockets\websockets_impl.py", line 255, in run_asgi
+    result = await self.app(self.scope, self.asgi_receive, self.asgi_send)
+                   │    │   │    │      │    │             │    └ <function WebSocketProtocol.asgi_send at 0x0000018F4E6C3A30>
+                   │    │   │    │      │    │             └ <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0000018F4E6D34F0>
+                   │    │   │    │      │    └ <function WebSocketProtocol.asgi_receive at 0x0000018F4E6C3AC0>
+                   │    │   │    │      └ <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0000018F4E6D34F0>
+                   │    │   │    └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+                   │    │   └ <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0000018F4E6D34F0>
+                   │    └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x0000018F4E614A60>
+                   └ <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0000018F4E6D34F0>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 84, in __call__
+    return await self.app(scope, receive, send)
+                 │    │   │      │        └ <bound method WebSocketProtocol.asgi_send of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0000...
+                 │    │   │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+                 │    │   └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+                 │    └ <fastapi.applications.FastAPI object at 0x0000018F4E6D0EE0>
+                 └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x0000018F4E614A60>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+                           │      │        └ <bound method WebSocketProtocol.asgi_send of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0000...
+                           │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+                           └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\applications.py", line 123, in __call__
+    await self.middleware_stack(scope, receive, send)
+          │    │                │      │        └ <bound method WebSocketProtocol.asgi_send of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0000...
+          │    │                │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+          │    │                └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+          │    └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x0000018F4E6D1CF0>
+          └ <fastapi.applications.FastAPI object at 0x0000018F4E6D0EE0>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\middleware\errors.py", line 151, in __call__
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <bound method WebSocketProtocol.asgi_send of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0000...
+          │    │   │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+          │    │   └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+          │    └ <starlette.middleware.cors.CORSMiddleware object at 0x0000018F4E6D1E70>
+          └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x0000018F4E6D1CF0>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\middleware\cors.py", line 75, in __call__
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <bound method WebSocketProtocol.asgi_send of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0000...
+          │    │   │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+          │    │   └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+          │    └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x0000018F4E6D1E40>
+          └ <starlette.middleware.cors.CORSMiddleware object at 0x0000018F4E6D1E70>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+          │                            │    │    │     │      │        └ <bound method WebSocketProtocol.asgi_send of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0000...
+          │                            │    │    │     │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+          │                            │    │    │     └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+          │                            │    │    └ <starlette.websockets.WebSocket object at 0x0000018F4E6D2DD0>
+          │                            │    └ <fastapi.routing.APIRouter object at 0x0000018F4E6D1030>
+          │                            └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x0000018F4E6D1E40>
+          └ <function wrap_app_handling_exceptions at 0x0000018F4E22F130>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+          │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000018F4E6C93F0>
+          │   │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+          │   └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+          └ <fastapi.routing.APIRouter object at 0x0000018F4E6D1030>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\routing.py", line 758, in __call__
+    await self.middleware_stack(scope, receive, send)
+          │    │                │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000018F4E6C93F0>
+          │    │                │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+          │    │                └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+          │    └ <bound method Router.app of <fastapi.routing.APIRouter object at 0x0000018F4E6D1030>>
+          └ <fastapi.routing.APIRouter object at 0x0000018F4E6D1030>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\routing.py", line 778, in app
+    await route.handle(scope, receive, send)
+          │     │      │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000018F4E6C93F0>
+          │     │      │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+          │     │      └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+          │     └ <function WebSocketRoute.handle at 0x0000018F4E2644C0>
+          └ APIWebSocketRoute(path='/ws/{user}', name='websocket_endpoint')
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\routing.py", line 375, in handle
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000018F4E6C93F0>
+          │    │   │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+          │    │   └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+          │    └ <function websocket_session.<locals>.app at 0x0000018F4E6C9510>
+          └ APIWebSocketRoute(path='/ws/{user}', name='websocket_endpoint')
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\routing.py", line 98, in app
+    await wrap_app_handling_exceptions(app, session)(scope, receive, send)
+          │                            │    │        │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000018F4E6C93F0>
+          │                            │    │        │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+          │                            │    │        └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+          │                            │    └ <starlette.websockets.WebSocket object at 0x0000018F4E6D2B30>
+          │                            └ <function websocket_session.<locals>.app.<locals>.app at 0x0000018F4E6C91B0>
+          └ <function wrap_app_handling_exceptions at 0x0000018F4E22F130>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+          │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000018F4E6C92D0>
+          │   │      └ <bound method WebSocketProtocol.asgi_receive of <uvicorn.protocols.websockets.websockets_impl.WebSocketProtocol object at 0x0...
+          │   └ {'type': 'websocket', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'scheme': 'ws', 'server': ('1...
+          └ <function websocket_session.<locals>.app.<locals>.app at 0x0000018F4E6C91B0>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\routing.py", line 96, in app
+    await func(session)
+          │    └ <starlette.websockets.WebSocket object at 0x0000018F4E6D2B30>
+          └ <function get_websocket_app.<locals>.app at 0x0000018F4E6C9480>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\fastapi\routing.py", line 348, in app
+    await dependant.call(**values)
+          │         │      └ {'user': 'user1', 'ws': <starlette.websockets.WebSocket object at 0x0000018F4E6D2B30>}
+          │         └ <function websocket_endpoint at 0x0000018F4E6C8E50>
+          └ <fastapi.dependencies.models.Dependant object at 0x0000018F4E6D1540>
+
+  File "D:\MyWork\MyCode\PythonProject\xhs-fastapi\backend\websocket_test.py", line 102, in websocket_endpoint
+    await manager.send_periodic_message(ws)
+          │       │                     └ <starlette.websockets.WebSocket object at 0x0000018F4E6D2B30>
+          │       └ <staticmethod(<function ConnectionManager.send_periodic_message at 0x0000018F4E6C8D30>)>
+          └ <websocket_test.ConnectionManager object at 0x0000018F4E6D1360>
+
+  File "D:\MyWork\MyCode\PythonProject\xhs-fastapi\backend\websocket_test.py", line 83, in send_periodic_message
+    await ws.send_text(f"This is a periodic message. Current time: {current_time}")
+          │  └ <function WebSocket.send_text at 0x0000018F4E183BE0>
+          └ <starlette.websockets.WebSocket object at 0x0000018F4E6D2B30>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\websockets.py", line 169, in send_text
+    await self.send({"type": "websocket.send", "text": data})
+          │    │                                       └ 'This is a periodic message. Current time: 2024-03-01 15:07:57'
+          │    └ <function WebSocket.send at 0x0000018F4E1836D0>
+          └ <starlette.websockets.WebSocket object at 0x0000018F4E6D2B30>
+
+  File "D:\Study\Anaconda3\envs\xhsScrapy\lib\site-packages\starlette\websockets.py", line 93, in send
+    raise RuntimeError('Cannot call "send" once a close message has been sent.')
+
+RuntimeError: Cannot call "send" once a close message has been sent.
+2024-03-01 15:10:41.139 | INFO     | uvicorn.server:shutdown:265 - Shutting down
+2024-03-01 15:10:41.250 | INFO     | uvicorn.lifespan.on:shutdown:65 - Waiting for application shutdown.
+2024-03-01 15:10:41.251 | INFO     | uvicorn.lifespan.on:shutdown:76 - Application shutdown complete.
+2024-03-01 15:10:41.251 | INFO     | uvicorn.server:serve:87 - Finished server process [25276]
+2024-03-01 15:10:43.352 | INFO     | uvicorn.server:serve:77 - Started server process [35476]
+2024-03-01 15:10:43.353 | INFO     | uvicorn.lifespan.on:startup:46 - Waiting for application startup.
+2024-03-01 15:10:43.353 | INFO     | uvicorn.lifespan.on:startup:60 - Application startup complete.
+2024-03-01 15:10:43.355 | INFO     | uvicorn.server:_log_started_message:219 - Uvicorn running on http://127.0.0.1:8010 (Press CTRL+C to quit)
+2024-03-01 15:10:47.582 | INFO     | uvicorn.protocols.websockets.websockets_impl:asgi_send:287 - ('127.0.0.1', 50485) - "WebSocket /ws/user1" [accepted]
+2024-03-01 15:10:47.582 | INFO     | websockets.legacy.server:handshake:642 - connection open
+2024-03-01 15:12:13.188 | INFO     | uvicorn.server:shutdown:265 - Shutting down
+2024-03-01 15:12:13.189 | INFO     | websockets.legacy.server:handler:264 - connection closed
+2024-03-01 15:12:13.300 | INFO     | uvicorn.server:_wait_tasks_to_complete:310 - Waiting for background tasks to complete. (CTRL+C to force quit)
+2024-03-01 15:12:14.826 | INFO     | uvicorn.lifespan.on:shutdown:65 - Waiting for application shutdown.
+2024-03-01 15:12:14.826 | INFO     | uvicorn.lifespan.on:shutdown:76 - Application shutdown complete.
+2024-03-01 15:12:14.826 | INFO     | uvicorn.server:serve:87 - Finished server process [35476]
+2024-03-01 15:12:15.631 | INFO     | uvicorn.server:serve:77 - Started server process [40420]
+2024-03-01 15:12:15.631 | INFO     | uvicorn.lifespan.on:startup:46 - Waiting for application startup.
+2024-03-01 15:12:15.632 | INFO     | uvicorn.lifespan.on:startup:60 - Application startup complete.
+2024-03-01 15:12:15.633 | INFO     | uvicorn.server:_log_started_message:219 - Uvicorn running on http://127.0.0.1:8010 (Press CTRL+C to quit)
+2024-03-01 15:23:33.562 | INFO     | uvicorn.server:shutdown:265 - Shutting down
+2024-03-01 15:23:33.673 | INFO     | uvicorn.lifespan.on:shutdown:65 - Waiting for application shutdown.
+2024-03-01 15:23:33.674 | INFO     | uvicorn.lifespan.on:shutdown:76 - Application shutdown complete.
+2024-03-01 15:23:33.674 | INFO     | uvicorn.server:serve:87 - Finished server process [40420]

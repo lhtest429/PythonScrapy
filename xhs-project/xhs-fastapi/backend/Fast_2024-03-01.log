@@ -1,0 +1,8 @@
+20240301 14:54:28 - MainProcess | MainThread | server.serve:77 - INFO -Started server process [35528]
+20240301 14:54:28 - MainProcess | MainThread | on.startup:46 - INFO -Waiting for application startup.
+20240301 14:54:28 - MainProcess | MainThread | on.startup:60 - INFO -Application startup complete.
+20240301 14:54:28 - MainProcess | MainThread | server._log_started_message:219 - INFO -Uvicorn running on http://0.0.0.0:8010 (Press CTRL+C to quit)
+20240301 14:55:14 - MainProcess | MainThread | server.shutdown:265 - INFO -Shutting down
+20240301 14:55:14 - MainProcess | MainThread | on.shutdown:65 - INFO -Waiting for application shutdown.
+20240301 14:55:14 - MainProcess | MainThread | on.shutdown:76 - INFO -Application shutdown complete.
+20240301 14:55:14 - MainProcess | MainThread | server.serve:87 - INFO -Finished server process [35528]

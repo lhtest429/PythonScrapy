@@ -1,0 +1,10 @@
+2024-05-18 12:11:41.880 | INFO     | uvicorn.server:serve:77 - Started server process [28204]
+2024-05-18 12:11:41.880 | INFO     | uvicorn.lifespan.on:startup:46 - Waiting for application startup.
+2024-05-18 12:11:41.880 | INFO     | uvicorn.lifespan.on:startup:60 - Application startup complete.
+2024-05-18 12:11:41.881 | INFO     | uvicorn.server:_log_started_message:219 - Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2024-05-18 12:11:47.389 | INFO     | uvicorn.protocols.http.httptools_impl:send:489 - 127.0.0.1:61054 - "OPTIONS /api/login HTTP/1.1" 200
+2024-05-18 12:11:47.438 | INFO     | uvicorn.protocols.http.httptools_impl:send:489 - 127.0.0.1:61054 - "POST /api/login HTTP/1.1" 200
+2024-05-18 12:12:11.203 | INFO     | uvicorn.server:shutdown:265 - Shutting down
+2024-05-18 12:12:11.312 | INFO     | uvicorn.lifespan.on:shutdown:65 - Waiting for application shutdown.
+2024-05-18 12:12:11.312 | INFO     | uvicorn.lifespan.on:shutdown:76 - Application shutdown complete.
+2024-05-18 12:12:11.312 | INFO     | uvicorn.server:serve:87 - Finished server process [28204]
